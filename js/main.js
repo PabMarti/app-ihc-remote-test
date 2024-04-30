@@ -154,4 +154,4 @@ function leer(){
 }
 
   // Llamar a fetchData() cada 2 segundos
-  setInterval(leer(), 2000);
+  setInterval(leer, 2000);
