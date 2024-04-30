@@ -118,10 +118,28 @@ function leer(){
           cortinaA3.style.display = "none";
         break;
         case 'activa la alarma':
-            
+          function reproducirAudio() {
+            // Crear un nuevo elemento de audio
+            const audio = new Audio('../assets/alarma.mp3'); // Reemplaza 'ruta_del_audio.mp3' con la URL o la ruta de tu archivo de audio
+          
+            // Reproducir el audio
+            audio.play();
+          }
+          
+          // Llamar a la función para reproducir el audio
+          reproducirAudio();
         break;
         case 'desactiva la alarma':
-            
+          function reproducirAudio() {
+            // Crear un nuevo elemento de audio
+            const audio = new Audio('../assets/alarma.mp3'); // Reemplaza 'ruta_del_audio.mp3' con la URL o la ruta de tu archivo de audio
+          
+            // Reproducir el audio
+            audio.play();
+          }
+          
+          // Llamar a la función para reproducir el audio
+          reproducirAudio();
         break;
         case 'enciende las cámaras':
           const camaraA1 = document.getElementById("camaraA1");
@@ -152,6 +170,3 @@ function leer(){
   .catch(error => console.error("Error al obtener datos del API:", error));
 
 }
-
-  // Llamar a fetchData() cada 2 segundos
-  setInterval(leer, 2000);
