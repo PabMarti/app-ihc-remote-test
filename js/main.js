@@ -10,12 +10,47 @@ function actualizarPagina() {
     const comando = ultimoRegistro.comando;
     console.log(comando);
 
+    const focoRecamaraA = document.getElementById("focoRecamaraA");
+    const focoRecamaraE = document.getElementById("focoRecamaraE");
+            const focoSalaA = document.getElementById("focoSalaA");
+            const focoSalaE = document.getElementById("focoSalaE");
+      const focoJardinA1 = document.getElementById("focoJardinA1");
+      const focoJardinE1 = document.getElementById("focoJardinE1");
+      const focoJardinA2 = document.getElementById("focoJardinA2");
+      const focoJardinE2 = document.getElementById("focoJardinE2");
+      const focoJardinA3 = document.getElementById("focoJardinA3");
+      const focoJardinE3 = document.getElementById("focoJardinE3");
+      const focoJardinA4 = document.getElementById("focoJardinA4");
+      const focoJardinE4 = document.getElementById("focoJardinE4");
+      const focoJardinA5 = document.getElementById("focoJardinA5");
+      const focoJardinE5 = document.getElementById("focoJardinE5");
+        const ventiladorA = document.getElementById("ventiladorA");
+        const ventiladorE = document.getElementById("ventiladorE");
+            const cortinaC1 = document.getElementById("cortinaC1");
+            const cortinaC2 = document.getElementById("cortinaC2");
+            const cortinaC3 = document.getElementById("cortinaC3");
+            const cortinaA1 = document.getElementById("cortinaA1");
+            const cortinaA2 = document.getElementById("cortinaA2");
+            const cortinaA3 = document.getElementById("cortinaA3");
+   
+             const camaraA1 = document.getElementById("camaraA1");
+   
+             const camaraA2 = document.getElementById("camaraA2");
+   
+             const camaraA3 = document.getElementById("camaraA3");
+   
+             const camaraE1 = document.getElementById("camaraE1");
+   
+             const camaraE2 = document.getElementById("camaraE2");
+   
+             const camaraE3 = document.getElementById("camaraE3");
+
     // Ejecutar lógica basada en el comando
     switch (comando) {
       case 'enciende la luz de la recámara':
-            const focoRecamaraA = document.getElementById("focoRecamaraA");
+           
             focoRecamaraA.style.display = "none";
-            const focoRecamaraE = document.getElementById("focoRecamaraE");
+           
             focoRecamaraE.style.display = "block";
         break;
 
@@ -25,9 +60,9 @@ function actualizarPagina() {
         break;
 
         case 'enciende la luz de la sala':
-            const focoSalaA = document.getElementById("focoSalaA");
+   
             focoSalaA.style.display = "none";
-            const focoSalaE = document.getElementById("focoSalaE");
+   
             focoSalaE.style.display = "block";
         break;
 
@@ -37,25 +72,25 @@ function actualizarPagina() {
         break;
 
         case 'enciende las luces del jardín':
-          const focoJardinA1 = document.getElementById("focoJardinA1");
+       
           focoJardinA1.style.display = "none";
-          const focoJardinE1 = document.getElementById("focoJardinE1");
+       
           focoJardinE1.style.display = "block";
-          const focoJardinA2 = document.getElementById("focoJardinA2");
+       
           focoJardinA2.style.display = "none";
-          const focoJardinE2 = document.getElementById("focoJardinE2");
+       
           focoJardinE2.style.display = "block";
-          const focoJardinA3 = document.getElementById("focoJardinA3");
+       
           focoJardinA3.style.display = "none";
-          const focoJardinE3 = document.getElementById("focoJardinE3");
+       
           focoJardinE3.style.display = "block";
-          const focoJardinA4 = document.getElementById("focoJardinA4");
+       
           focoJardinA4.style.display = "none";
-          const focoJardinE4 = document.getElementById("focoJardinE4");
+       
           focoJardinE4.style.display = "block";
-          const focoJardinA5 = document.getElementById("focoJardinA5");
+       
           focoJardinA5.style.display = "none";
-          const focoJardinE5 = document.getElementById("focoJardinE5");
+       
           focoJardinE5.style.display = "block";
         break;
 
@@ -82,9 +117,9 @@ function actualizarPagina() {
           focoJardinE5.style.display = "none";
         break;
         case 'enciende el ventilador':
-          const ventiladorA = document.getElementById("ventiladorA");
+     
           ventiladorA.style.display = "none";
-          const ventiladorE = document.getElementById("ventiladorE");
+     
           ventiladorE.style.display = "block";
         break;
         case 'apaga el ventilador':
@@ -92,67 +127,45 @@ function actualizarPagina() {
           ventiladorA.style.display = "block";
         break;
         case 'abre las cortinas':
-          const cortinaC1 = document.getElementById("cortinaC1");
+ 
           cortinaC1.style.display = "none";
-          const cortinaC2 = document.getElementById("cortinaC2");
+ 
           cortinaC2.style.display = "none";
-          const cortinaC3 = document.getElementById("cortinaC3");
+ 
           cortinaC3.style.display = "none";
-          const cortinaA1 = document.getElementById("cortinaA1");
+ 
           cortinaA1.style.display = "block";
-          const cortinaA2 = document.getElementById("cortinaA2");
+ 
           cortinaA2.style.display = "block";
-          const cortinaA3 = document.getElementById("cortinaA3");
+ 
           cortinaA3.style.display = "block";
         break;
         case 'cierra las cortinas':
+          
+          cortinaC1.style.display = "block";
+          cortinaC2.style.display = "block";
+          cortinaC3.style.display = "block";
+          
           cortinaA1.style.display = "none";
           
           cortinaA2.style.display = "none";
           
           cortinaA3.style.display = "none";
-          cortinaC1.style.display = "block";
-          cortinaC2.style.display = "block";
-          cortinaC3.style.display = "block";
-          
-          
         break;
         case 'activa la alarma':
-          function reproducirAudio() {
-            // Crear un nuevo elemento de audio
-            const audio = new Audio('../assets/alarma.mp3'); // Reemplaza 'ruta_del_audio.mp3' con la URL o la ruta de tu archivo de audio
-          
-            // Reproducir el audio
-            audio.play();
-          }
-          
-          // Llamar a la función para reproducir el audio
-          reproducirAudio();
+          var audio = document.getElementById("audio");
+          audio.play();
         break;
         case 'desactiva la alarma':
-          function reproducirAudio() {
-            // Crear un nuevo elemento de audio
-            const audio = new Audio('../assets/alarma.mp3'); // Reemplaza 'ruta_del_audio.mp3' con la URL o la ruta de tu archivo de audio
-          
-            // Reproducir el audio
+            var audio = document.getElementById("audio");
             audio.play();
-          }
-          
-          // Llamar a la función para reproducir el audio
-          reproducirAudio();
         break;
         case 'enciende las cámaras':
-          const camaraA1 = document.getElementById("camaraA1");
           camaraA1.style.display = "none";
-          const camaraA2 = document.getElementById("camaraA2");
           camaraA2.style.display = "none";
-          const camaraA3 = document.getElementById("camaraA3");
           camaraA3.style.display = "none";
-          const camaraE1 = document.getElementById("camaraE1");
           camaraE1.style.display = "block";
-          const camaraE2 = document.getElementById("camaraE2");
           camaraE2.style.display = "block";
-          const camaraE3 = document.getElementById("camaraE3");
           camaraE3.style.display = "block";
         break;
         case 'apaga las cámaras':
