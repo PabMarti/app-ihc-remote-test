@@ -166,7 +166,10 @@ function leer(){
         default:
           resultDiv.innerHTML = '<p>Comando no reconocido.</p>';
       }
+    
   })
   .catch(error => console.error("Error al obtener datos del API:", error));
 
 }
+// Ejecutar la función cada 2 segundos
+setInterval(leer, 2000);
