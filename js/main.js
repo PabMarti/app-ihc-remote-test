@@ -1,5 +1,5 @@
 
-function leer(){
+function actualizarPagina() {
   fetch("https://65ef77abead08fa78a507acc.mockapi.io/comandosCasa")
   .then(response => response.json())
   .then(data => {
@@ -171,5 +171,6 @@ function leer(){
   .catch(error => console.error("Error al obtener datos del API:", error));
 
 }
-// Ejecutar la función cada 2 segundos
-setInterval(leer, 2000);
+actualizarPagina();
+// Llamar a la función para actualizar la página cada 2 segundos
+setInterval(actualizarPagina, 2000);
