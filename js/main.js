@@ -106,16 +106,16 @@ function actualizarPagina() {
           cortinaA3.style.display = "block";
         break;
         case 'cierra las cortinas':
-          
-          cortinaC1.style.display = "block";
-          cortinaC2.style.display = "block";
-          cortinaC3.style.display = "block";
-          
           cortinaA1.style.display = "none";
           
           cortinaA2.style.display = "none";
           
           cortinaA3.style.display = "none";
+          cortinaC1.style.display = "block";
+          cortinaC2.style.display = "block";
+          cortinaC3.style.display = "block";
+          
+          
         break;
         case 'activa la alarma':
           function reproducirAudio() {
